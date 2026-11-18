@@ -39,7 +39,7 @@ This repository documents the practical implementation of **Week 3 (Project Modu
    .../john-1.9.0-jumbo-1-win64/run/john.exe
    ```
 
-![Johnny GUI Settings Configuration](screenshots/01-johnny-jtr-path-setup.png)
+![Johnny GUI Settings Configuration](johnny-jtr-path-setup.png)
 
 #### 2. PDF Hash Extraction (`pdf2john`)
 1. Uploaded the target sample file (`My Locked PDF1.pdf`) to the `pdf2john` hash extractor.
@@ -49,7 +49,7 @@ This repository documents the practical implementation of **Week 3 (Project Modu
    ```
 3. Saved the clean hash string (ensuring no extraneous wrapper characters) into a plain text file named `hash1.txt`.
 
-![PDF Hash Extraction Output](screenshots/02-pdf-hash-extraction.png)
+![PDF Hash Extraction Output](pdf-hash-extraction.png)
 
 #### 3. Executing the Attack in Johnny
 1. Opened Johnny GUI and selected **Open password file → Open password file (PASSWD format)** to load `hash1.txt`.
@@ -57,9 +57,9 @@ This repository documents the practical implementation of **Week 3 (Project Modu
 3. Clicked **Start new attack** to initiate the cracking session.
 4. Recovered the plaintext password (`password1`) at 100% completion and unlocked `My Locked PDF1.pdf` (`networkwalks_flag1.pdf`) to capture the lab flag.
 
-![Johnny Cracked Password Result](screenshots/03-johnny-cracked-result.png)
+![Johnny Cracked Password Result](johnny-cracked-result.png)
 
-![Unlocked PDF Flag Verification](screenshots/04-unlocked-pdf-flag.png)
+![Unlocked PDF Flag Verification](unlocked-pdf-flag.png)
 
 ---
 
@@ -70,14 +70,14 @@ This repository documents the practical implementation of **Week 3 (Project Modu
 2. Selected the **PDF** tab and loaded `My Locked PDF1.pdf` (parsed locally in the browser without uploading sensitive files).
 3. Extracted the 128-bit Revision R4 / Version V4 `$pdf$` hash string.
 
-![Networkwalks Hash Calculator Extraction](screenshots/05-nw-hash-calculator.png)
+![Networkwalks Hash Calculator Extraction](nw-hash-calculator.png)
 
 #### 2. Dictionary Attack via Networkwalks Password Cracker
 1. Opened the **Networkwalks Password Cracker** (`networkwalks.com/password-cracker/`).
 2. Pasted the extracted `$pdf$` hash into the input field and selected the built-in wordlist (`100 words`).
 3. Clicked **START CRACKING** to execute the dictionary attack, matching and recovering `password1` within seconds.
 
-![Networkwalks Password Cracker Success](screenshots/06-nw-password-cracker.png)
+![Networkwalks Password Cracker Success](nw-password-cracker.png)
 
 ---
 
@@ -97,23 +97,11 @@ This repository documents the practical implementation of **Week 3 (Project Modu
 
 ---
 
-## 📁 Repository Structure
-
-```text
-NETWORKWALKS-PENIUS-B084-WK3-PASSWORD-CRACKING/
-├── README.md                                  # Lab documentation & methodology
-└── screenshots/                               # Visual proof of lab execution
-    ├── 01-johnny-jtr-path-setup.png
-    ├── 02-pdf-hash-extraction.png
-    ├── 03-johnny-cracked-result.png
-    ├── 04-unlocked-pdf-flag.png
-    ├── 05-nw-hash-calculator.png
-    └── 06-nw-password-cracker.png
-```
-
----
+## unlocked pdf flags for pdf 2 and 3
+![Unlocked PDF Flag Verification](unlocked-pdf2-flag.png)
+![Unlocked PDF Flag Verification](unlocked-pdf3-flag.png)
 
 ## 👤 Author
 
-**Penius Jempa (Jay-P)**  
+**Penius Jempa **  
 *B.Sc. Computer Science Student | Cybersecurity & Networking Enthusiast*  
